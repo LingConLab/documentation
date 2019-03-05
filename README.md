@@ -17,4 +17,4 @@
 
 ## Authors
 
-K. Filatov, G. Moroz, L. Morozova, N. Panova, E. Sokur, M. Voronov
+K. Filatov, G. Moroz, L. Morozova, N. Panova, L. Sokur, M. Voronov
