@@ -1,9 +1,20 @@
 ## General 
 
-* licences
-* contacts
-* ConLab affiliation
-* authors
+It is nice to start your code or create a README.md file with a short description containing:
+
+* name of the author/authors
+* date of the creation
+* project link with the ConLab affiliation
+* general purpose of the script
+* link to the github, where the latest version is stored
+* licence
+
+```
+# This is code to replicate the analyses and figures from article [Abced, Hij 2019]
+# 2019.03.08 J. Rscripter, M. Pythonscripter (HSE Linguistic Convergence Laboratory)
+# This script is distributed under the GNU General Public License.
+# The last vertion of this script is here: https://...
+```
 
 ## Github Repos
 
