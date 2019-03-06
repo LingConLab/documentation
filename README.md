@@ -1,4 +1,6 @@
-## General 
+## 1. Inroduction
+
+## 2. General 
 
 It is nice to start your code or create a README.md file with a short description containing:
 
@@ -16,13 +18,13 @@ It is nice to start your code or create a README.md file with a short descriptio
 # The last vertion of this script is here: https://...
 ```
 
-## Github Repos
+## 3. Github Repos
 
-## DBs
+## 4. DBs
 
-## Sites and Platforms
+## 5. Sites and Platforms
 
-## Python
+## 6. Python
 
 If you create scripts, applications or libraries using Python, you should provide comments in your code.
 The best way do is to use docstrings which can be easily accessed with `<name>.__doc__`
@@ -33,7 +35,7 @@ For functions and methods you should provide list of parameters and the output.
 
 We provide the example in `documented_python.py` in this repo.
 
-## R
+## 7. R
 ### Libraries
 List all libraries at the begining (don't use `require()` function):
 
@@ -42,9 +44,18 @@ library(tidyverse)
 library(lingtypology)
 ```
 
+Superheroes could also use `packageVersion()` function and report verssions of the packages.
+
+```
+library(tidyverse) # v. 1.2.1
+library(lingtypology) # v. 1.0.13
+```
+
 ### `setwd()`
 Be careful when using `setwd()`. Usage of the absolute path (like `"/Users/Alladin/Documents/sannic-project/files/"`) can limit reproducibility. It is the same about reading and writing files in a script (like `read.csv(file = "/Users/Alladin/Documents/sannic-project/files/dataset-2013-01.csv")`).
 
+### Temporary objects
+For long codes it is a good practice to remove temporary objects after they have served their purpose. It will make it easear to debug the code.
 
 ## Authors
 
