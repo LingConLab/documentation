@@ -99,7 +99,7 @@ If you consider to use your web application as a platform for other projects, yo
 
 - it is nice, if the code of your platform will be commented (the way it described in section 5) to allow users upgrade your platform
 
-You may follow an example given in `[coming soon]`.
+You may follow an example given in [`Instruction to dialect corpora platform`](https://github.com/LingConLab/documentation/blob/master/dialect_corpora_platform.md)
 
 ---
 
