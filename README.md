@@ -2,6 +2,7 @@
 
 ## 2. General 
 
+### 2.1 Description
 It is nice to start your code or create a README.md file with a short description containing:
 
 * name of the author/authors
@@ -17,6 +18,9 @@ It is nice to start your code or create a README.md file with a short descriptio
 # This script is distributed under the GNU General Public License.
 # The last vertion of this script is here: https://...
 ```
+
+### 2.2 File names
+File names should be meaningful. Avoid using special characters (Cyrillic, IPA) in file names --- stick with numbers, standard Latin letters, -, and _. Avoid using transliterated names (like `danniye_iz_Rikvani.txt`) or, if you ought to (like for word-specific files, e. g. sound name for one word), add English translation (`2019.03.14_Neshukay_Adyghe_`**head**`_shha.wav`).
 
 ## 3. Github Repos
 
