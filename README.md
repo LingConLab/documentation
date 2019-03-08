@@ -52,7 +52,24 @@ Each important change to a function/package should be announced in `NEWS.md`. It
 
 ## 4. DBs
 
-## 5. Sites and Platforms
+## 5. Web applications
+
+...
+
+### 5.1 Platforms
+
+If you consider to use your web application as a platform for other projects, you should provide a manual including:
+
+- contacts of the platform developer
+
+- the way you want platform users site your platform in projects
+
+- a link to a repo containing template version of your application
+
+- an instruction for data preparation and composition
+
+- instruction or description of web interface contects to allow a user make changes in site desing in view of purposes of a project
+
 
 ## 6. Python
 
