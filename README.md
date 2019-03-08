@@ -20,7 +20,7 @@ It is nice to start your code or create a README.md file with a short descriptio
 ```
 
 ### 2.2 File names
-File names should be meaningful. Avoid using special characters (Cyrillic, IPA) in file names --- stick with numbers, standard Latin letters, -, and _. Avoid using transliterated names (like `danniye_iz_Rikvani.txt`) or, if you ought to (like for word-specific files, e. g. sound name for one word), add English translation (`2019.03.14_Neshukay_Adyghe_`**head**`_shha.wav`).
+File names should be meaningful. Avoid using special characters (Cyrillic, IPA) in file names --- stick with numbers, standard Latin letters, -, and _. Avoid using transliterated names (like `danniye_iz_Rikvani.txt`) or, if you ought to (like for word-specific files, e. g. sound name for one word), add English translation (bad: `2019.03.14_Neshukay_Adyghe_shha.wav`, good: `2019.03.14_Neshukay_Adyghe_head_shha.wav`). If files should be run in a particular order, prefix them with numbers. If it seems likely you’ll have more than 10 files, left pad with zero (`01.bla-bla...`, `02.bla-bla...`, ... `09.bla-bla...`, `10.bla-bla...`...). Pay attention to capitalization, since you, or some of your collaborators, might be using an operating system with a case-insensitive file system, so **never** use names that differ only in their capitalization.
 
 ## 3. Github Repos
 
@@ -40,7 +40,7 @@ For functions and methods you should provide list of parameters and the output.
 We provide the example in `documented_python.py` in this repo.
 
 ## 7. R
-### Libraries
+### 7.1 Libraries
 List all libraries at the begining (don't use `require()` function):
 
 ```
@@ -55,10 +55,10 @@ library(tidyverse) # v. 1.2.1
 library(lingtypology) # v. 1.0.13
 ```
 
-### `setwd()`
+### 7.2 `setwd()`
 Be careful when using `setwd()`. Usage of the absolute path (like `"/Users/Alladin/Documents/sannic-project/files/"`) can limit reproducibility. It is the same about reading and writing files in a script (like `read.csv(file = "/Users/Alladin/Documents/sannic-project/files/dataset-2013-01.csv")`).
 
-### Temporary objects
+### 7.3 Temporary objects
 For long codes it is a good practice to remove temporary objects after they have served their purpose. It will make it easear to debug the code.
 
 ## Authors
