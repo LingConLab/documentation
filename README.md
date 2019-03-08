@@ -78,7 +78,7 @@ If you develop a web application, you should provide:
 
 - complete code files structure description
 
-- comment your code as much as possible or al least provide an assignment for each file (what does it contains and what purposes does it serve) in your web application. Follow the norm required by programming language you use (e.g. PEP8 for Python)
+- comment your code as much as possible or at least provide an assignment to each file (what does it contains and what purposes does it serve) in your web application. Follow the norm required by programming language you use (e.g. PEP8 for Python)
 
 - if your site contains a database, make additional sub-documentation to it (see section 4)
 
