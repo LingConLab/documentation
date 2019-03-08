@@ -1,5 +1,7 @@
 ## 1. Inroduction
 
+---
+
 ## 2. General 
 
 ### 2.1 Description
@@ -48,9 +50,15 @@ Don't forget to cite your data sources and software developers (Python, R, all p
 ### 2.9 Versioning
 Each important change to a function/package should be announced in `NEWS.md`. It is also to nice to have tracking of versions (have a look to [Semantic Versioning](https://semver.org/)).
 
+---
+
 ## 3. Github Repos
 
+---
+
 ## 4. DBs
+
+---
 
 ## 5. Web applications
 
@@ -70,6 +78,7 @@ If you consider to use your web application as a platform for other projects, yo
 
 - instruction or description of web interface contects to allow a user make changes in site desing in view of purposes of a project
 
+---
 
 ## 6. Python
 
@@ -81,6 +90,8 @@ For classes you should provide list of variables, attributes and their descripti
 For functions and methods you should provide list of parameters and the output.
 
 We provide the example in `documented_python.py` in this repo.
+
+---
 
 ## 7. R
 ### 7.1 Libraries
@@ -105,6 +116,8 @@ Be careful when using `setwd()`. Usage of the absolute path (like `"/Users/Allad
 
 ### 7.3 Temporary objects
 For long codes it is a good practice to remove temporary objects after they have served their purpose. It will make it easear to debug the code.
+
+---
 
 ## Authors
 
