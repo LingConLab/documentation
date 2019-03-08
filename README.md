@@ -62,7 +62,26 @@ Each important change to a function/package should be announced in `NEWS.md`. It
 
 ## 5. Web applications
 
-...
+If you develop a web application, you should provide:
+
+**system administration manual**
+
+- system requirements (modules, packages, etc.: for example, apache web-server, python 3.6, ssh, mysql)
+
+- access requirements if necessary (password, public key, passphrase, port number)
+
+- links to additional materials (e.g. mysql backup script)
+
+- installation instructions
+
+**functional specification**
+
+- complete code files structure description
+
+- comment your code as much as possible or al least provide an assignment for each file (what does it contains and what purposes does it serve) in your web application. Follow the norm required by programming language you use (e.g. PEP8 for Python)
+
+- if your site contains a database, make additional sub-documentation to it (see section 4)
+
 
 ### 5.1 Platforms
 
@@ -76,7 +95,11 @@ If you consider to use your web application as a platform for other projects, yo
 
 - an instruction for data preparation and composition
 
-- instruction or description of web interface contects to allow a user make changes in site desing in view of purposes of a project
+- instruction or description of web interface contents to allow a user make changes in site desing in view of purposes of a project (e.g. edit titles and contents of general sections)
+
+- it is nice, if the code of your platform will be commented (the way it described in section 5) to allow users upgrade your platform
+
+You may follow an example given in `[coming soon]`.
 
 ---
 
