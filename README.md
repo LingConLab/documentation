@@ -31,7 +31,7 @@ If files should be run in a particular order, prefix them with numbers. If it se
 It is nice to limit your code to 80 characters per line. Long code lines are bad for readability. Also, many people prefer editor windows that are about 80 characters wide.
 
 ### 2.4 Comment your code
-It is nice to limit your code to 80 characters per line. Long code lines are bad for readability. Also, many people prefer editor windows that are about 80 characters wide.
+
 
 ### 2.5 Tests
 If you create a function or even package that will be used multiple times, it is nice to create tests for each function. It is even beter to write some tests before you start creating your function or package.
@@ -40,6 +40,7 @@ If you create a function or even package that will be used multiple times, it is
 If you create a function or even package it is better to incorporate some argument's check (e. g. Whether some argument is a number? What should the function do with missing values?) and create some meaningfull warning/error messages.
 
 ### 2.7 Citing
+Don't forget to cite your data sources and software developers (Python, R, all package creaters). It is also nice to provide information about how to cite your work. If the result of our work is some `.html` page that represents data it is possible to use [GitHub](https://github.com) and [Zenodo](https://zenodo.org/) for obtaining some DOI codes for any stuff that you put in the GitHub repository.
 
 ### 2.8 Versioning
 Each important change to a function/package should be announced in `NEWS.md`. It is also to nice to have tracking of versions (have a look to [Semantic Versioning](https://semver.org/)).
