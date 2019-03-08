@@ -3,7 +3,7 @@
 ## 2. General 
 
 ### 2.1 Description
-It is nice to start your code or create a README.md file with a short description containing:
+It is nice to start your code or create a `README.md` file with a short description containing:
 
 * name of the author/authors
 * date of the creation
@@ -20,7 +20,12 @@ It is nice to start your code or create a README.md file with a short descriptio
 ```
 
 ### 2.2 File names
-File names should be meaningful. Avoid using special characters (Cyrillic, IPA) in file names --- stick with numbers, standard Latin letters, -, and _. Avoid using transliterated names (like `danniye_iz_Rikvani.txt`) or, if you ought to (like for word-specific files, e. g. sound name for one word), add English translation (bad: `2019.03.14_Neshukay_Adyghe_shha.wav`, good: `2019.03.14_Neshukay_Adyghe_head_shha.wav`). If files should be run in a particular order, prefix them with numbers. If it seems likely you’ll have more than 10 files, left pad with zero (`01.bla-bla...`, `02.bla-bla...`, ... `09.bla-bla...`, `10.bla-bla...`...). Pay attention to capitalization, since you, or some of your collaborators, might be using an operating system with a case-insensitive file system, so **never** use names that differ only in their capitalization.
+File names should be meaningful. Avoid using special characters (Cyrillic, IPA) in file names --- stick with numbers, standard Latin letters, -, and _. Avoid using transliterated names (like `danniye_iz_Rikvani.txt`) or, if you ought to (like for word-specific files, e. g. sound name for one word), add English translation 
+
+* bad: `2019.03.14_Neshukay_Adyghe_shha.wav`, 
+* good: `2019.03.14_Neshukay_Adyghe_head_shha.wav`). 
+
+If files should be run in a particular order, prefix them with numbers. If it seems likely you’ll have more than 10 files, left pad with zero (`01.bla-bla...`, `02.bla-bla...`, ... `09.bla-bla...`, `10.bla-bla...`...). Pay attention to capitalization, since you, or some of your collaborators, might be using an operating system with a case-insensitive file system, so **never** use names that differ only in their capitalization.
 
 ## 3. Github Repos
 
