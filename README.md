@@ -8,12 +8,14 @@
 ---
 
 ## 1. Inroduction
-This is a collection of instruction for digital products created in Linguistic Convergence Laboratory. Of course all cases are individual and we didn't have a plan to cover them all. But it will be better if you'll follow these instruction for purposes of:
+This is a collection of instruction for digital products created in Linguistic Convergence Laboratory. Of course all products are individual and we didn't have a plan to cover them all. Following these instruction you will help for purposes of:
 
 * reproducibility,
 * code debugging,
 * code review,
 * software reuse.
+
+Our instructions will cover the simplist common mistakes, but for more complicated cases have a look [here](https://en.wikipedia.org/wiki/Anti-pattern#Software_engineering) for a list of anti-patterns for software engineering.
 
 ---
 
