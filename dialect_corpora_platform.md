@@ -56,7 +56,9 @@ In further documentation the difference of location of `/corpus_data` and `/corp
 
 > <MEDIA_DESCRIPTOR MEDIA_URL="" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./**audio_file_name.wav**"/>
 
-4. put edited elan-files to the `<...>/corpus_data/ELAN-FILES` directory
+4. if speech of interviewers is tagged too, make sure that the layer is named exactly as **Interviewer** or rename it if neccessary in every file
+
+5. put edited elan-files to the `<...>/corpus_data/ELAN-FILES` directory
 
 **metadata**
 
@@ -83,6 +85,20 @@ You should choose 3-6 sections and create a short unification for them to use it
 Insert tags that you have chosen for search into `metaTags` list in `add_meta.py` file like this:
 
 `metaTags = ['id', 'string_id', 'sex', 'year_of_birth', 'education', 'russian_age']`
+
+---
+
+## Corpus generation
+
+coming soon
+
+---
+
+## Interface editing
+
+coming soon
+
+---
 
 ## Materials
 
