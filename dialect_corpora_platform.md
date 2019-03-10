@@ -62,7 +62,7 @@ In further documentation the difference of location of `/corpus_data` and `/corp
 
 **metadata**
 
-You should compile metadata of consultants who took part in audio recoding into `metadata_export.xml` file and put in into `/corpus_data` directory. The file must be structired like this:
+You should compile metadata of consultants who took part in audio recoding into `metadata_export.xml` file and put in into `/corpus_data` directory. The file must be structured like this:
 ```
 <meta>
   <person>
