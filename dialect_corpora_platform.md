@@ -78,7 +78,7 @@ You should compile metadata of consultants who took part in audio recoding into 
   ...
 </meta>
 ```
-One tag must refer to one section of metadata (e.g. year of birth, edication, place of birth etc.). It is nice if tag name corresponds do its content, e.g. `<education>` tag contains information about education of a consultant.
+One tag must refer to one section of metadata (e.g. year of birth, education, place of birth etc.). It is nice if tag name corresponds do its content, e.g. `<education>` tag contains information about education of a consultant.
 
 You should choose 3-6 sections and create a short unification for them to use it for search. For example, you may shorten detailed information about education to "primary", "secondary", "higher" and etc. fields.
 
