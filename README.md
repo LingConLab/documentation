@@ -106,7 +106,7 @@ If you consider to use your web application as a platform for other projects, yo
 
 - contacts of the platform developer
 
-- the way you want users site your platform in projects
+- the way you want users cite your platform in projects
 
 - a link to a repo containing template version of your application
 
