@@ -1,48 +1,66 @@
-## Размещение корпуса на сервере
+## Administration
+
+To administrate your project on a hosting you can use either terminal (then you need to install **ssh** package) or FTP-client (e.g. PuTTY for Windows, FileZilla for Linux).
+
+Access requiruments:
+
+- **linghub.ru**: public key + passphrase, password
+
+Make ssh connection via `ssh -i here/a/path/to/your/public/key username@linghub.ru`.
+
+- **parasolcorpus.org**: password
+
+Make ssh connection via `ssh username@parasolcorpus.org`.
+
+---
+
+## Setting corpus on server
 
 - **linghub.ru**
 
-1. в папке пользователя создать директорию по сокращенному названию корпуса
+1. create of a corpus folder in your user directory - that will be your project directory
 
-2. в созданной папке создать две директории: для интерфейса (далее - `/corpus_spoco`) и генератора (далее - `/corpus_data`), закачать в эти папки шаблоны соответствено (ссылки на шаблоны представлены в материалах)
+2. go to the project directory and create two subdirectories for an interface (further - `/corpus_spoco`) and for a generator (further - `/corpus_data`). Place there files and folders that are privided in materials section
 
 - **parasolcorpus.org**
 
-1. из папки пользователя перейти в корень системы
+1. go up to the root directory
 
-2. в папке `аdditionaldisk` создать директорию по сокращенному названию корпуса и загрузить в нее генератор
+2. in folder `аdditionaldisk` create a project directory and place there a generator provided in materials section 
 
-3. вернуться в основноную директорию, перейти в `/var/www/html/`, создать директорию по сокращенному названию корпуса и загрузить в нее интерфейс корпуса
+3. return to the root directory and go into `/var/www/html/`. There you should create another project directory and place interface sources into it
 
-В последующей инструции специфика расположения папок `/corpus_data` и `/corpus_spoco` в зависимости от хостинга не будет упоминаться, но вы должны иметь ее в виду. Это очень важно, так как ошибки в записи путей могут помешать генерации корпуса.
+In further documentation the difference of location of `/corpus_data` and `/corpus_spoco` directories in the hostings will not be mentioned. Nevertheless, you should keep it mind while editing paths, otherwise corpus generation may crash.
 
-## Подготовка данных
+---
 
-**аудио**
+## Data preparation
 
-1. названия файлов аудиозаписей не должны содержать символов кроме латиницы, цифр и \_
+**audio files**
 
-2. формат - `.wav`, на всех файлах должен быть **low-case**. Пример названия аудиофайла:
+1. audio file names must contain only latin letters, numbers and/or \_
+
+2. recommended format is `.wav` written lowercase, e.g. a file name:
 
 `20102018_mgd10.wav`
 
-3. аудиофайлы загрузить в директорию `<...>/data/ENDVERSION`
+3. put audiofiles in `<...>/corpus_data/ENDVERSION` directory
 
-**аннотации**
+**annotations**
 
-1. аннотации к аудиофайлам должны быть конвертированы в формат `.eaf` (elan-файл)
+1. annotations must be in `.eaf` forman (elan-file) or converted into it
 
-2. названия аннотаций должны совпадать с названиями аудиофайлов, к которым они относятся
+2. names of annotation files must be identical to names of adudiofiles they are related to
 
-3. в каждый элан-файл под тег `<HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">` вручную внести следующую строку, заменив **audio_file_name.wav** имя аудиозаписи, соответствующей данной аннотации:
+3. into each elan-file (after `<HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">` tag) you should manually place further line. Change **audio_file_name.wav** into a name of an audio-file that is related to the annotation:
 
 > <MEDIA_DESCRIPTOR MEDIA_URL="" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./**audio_file_name.wav**"/>
 
-4. загрузить элан-файлы в директорию `<...>/data/ELAN-FILES`
+4. put edited elan-files to the `<...>/corpus_data/ELAN-FILES` directory
 
-**метаданные**
+**metadata**
 
-Личные данные консультантов, участвовавших в записи аудиофайлов, нужно скомпоновать в файл `metadata_export.xml` и положить его в корень директории `/corpus_data`. Структура файла должна быть следующей:
+You should compile metadata of consultants who took part in audio recoding into `metadata_export.xml` file and put in into `/corpus_data` directory. The file must be structired like this:
 ```
 <meta>
   <person>
@@ -58,16 +76,16 @@
   ...
 </meta>
 ```
-Одному тегу должно соответствовать одно поле метаданных (например, год рождения, образование, место рождения и т.д.). Название тегов желательно должно соответствовать содержанию поля, например `<education>` для поля "образование".
+One tag must refer to one section of metadata (e.g. year of birth, edication, place of birth etc.). It is nice if tag name corresponds do its content, e.g. `<education>` tag contains information about education of a consultant.
 
-Необходимо выбрать 3-6 полей и придумать систему для их краткой унификации - эти поля будут использоваться в поиске. Например, развернутую информацию об образовании сократить до меток "начальное", "среднее", "высшее" и т.д.
+You should choose 3-6 sections and create a short unification for them to use it for search. For example, you may shorten detailed information about education to "primary", "secondary", "higher" and etc. fields.
 
-Теги выбранных для поиска полей нужно внести в список `metaTags` в файле `add_meta.py` примерно вот так:
+Insert tags that you have chosen for search into `metaTags` list in `add_meta.py` file like this:
 
 `metaTags = ['id', 'string_id', 'sex', 'year_of_birth', 'education', 'russian_age']`
 
-## Материалы
+## Materials
 
-1. [Шаблон интерфейса сайта](https://bitbucket.org/michauw/spoco/src/master/)
+1. [Template corpus interface](https://bitbucket.org/michauw/spoco/src/master/)
 
-2. [Шаблон генератора корпуса](https://drive.google.com/open?id=1V3Wyq3LL7t7b5JxSCtRiOnJ_gYfD8TEz)
+2. [Template corpus generator](https://drive.google.com/open?id=1V3Wyq3LL7t7b5JxSCtRiOnJ_gYfD8TEz)
