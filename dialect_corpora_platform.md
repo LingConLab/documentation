@@ -90,13 +90,35 @@ Insert tags that you have chosen for search into `metaTags` list in `add_meta.py
 
 ## Corpus generation
 
-coming soon
+1. set proper base_path to `/corpus_spoco` in `add_meta.py` according to hosting you use
+
+2. sit proper paths to `/corpus_data` and `/corpus_spoco` in files `/corpus_data/REBUILDCORPUSnoSoundfilesRolling.sh` and `/corpus_spoco/settings/init.php`
+
+3. create symbolic links of `/corpus_data/FullTexts.html` and `/corpus_data/files_html` with the same names into `/corpus_spoco`
+
+4. if `/corpus_data` run `sh REBUILDCORPUSnoSoundfilesRolling.sh` via command line (you should make ssh connection fot that, check out **administration** section) and wait finishing of corpus generation
+
+After that, the following functions must be accessible on your project site:
+
+- search with the use of metadata and grammar tags
+
+- audio fragments in a search output
+
+- extended context in search output
+
+- valid list of full texts
+
+- list of lexems and wordforms
+
+If something of that is not accessible, perhaps you have made a mistake in previous steps. To find out the problem it is useful to run rebuild script again (p. 4) and **read its log carefull - it will warn you about the cause of a crash**.
 
 ---
 
 ## Interface editing
 
-coming soon
+1. change a title name of your project in `/corpus_spoco/index.php` and in `/corpus_spoco/jsapp/corpus.js` everywhere you see
+
+2. 
 
 ---
 
