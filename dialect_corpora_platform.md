@@ -110,7 +110,7 @@ After that, the following functions must be accessible on your project site:
 
 - list of lexems and wordforms
 
-If something of that is not accessible, perhaps you have made a mistake in previous steps. To find out the problem it is useful to run rebuild script again (p. 4) and **read its log carefull - it will warn you about the cause of a crash**.
+If something of that is not accessible, perhaps you have made a mistake in previous steps. To find out the problem it is useful to run rebuild script again (p. 4) and **read its log carefully for the cause of a crash**.
 
 ---
 
