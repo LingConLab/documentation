@@ -134,7 +134,7 @@ Add the translation to `/corpus_spoco/js/traslations.js` as
 
 > "Some text": "Some transtaled text"
 
-Keep in mind that you must shield specific characters inside the text with `\`. If some text is not translated though you added it to the file, make sure that source text in the file is **identical** to the one you have inside translated tag and all spaces and characters are presist. If nothing translates at all, you probably have syntax error in `/corpus_spoco/js/traslations.js`.
+Keep in mind that you must shield specific characters inside the text with `\`. If some text is not translated though you added it to the file, make sure that source text in the file is **identical** to the one you have inside translated tag and all spaces and characters are presist. If nothing is translated at all, you probably have syntax error in `/corpus_spoco/js/traslations.js`.
 
 ---
 
