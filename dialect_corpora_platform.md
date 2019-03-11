@@ -116,7 +116,7 @@ If something of that is not accessible, perhaps you have made a mistake in previ
 
 ## Interface editing
 
-Keep in mind, that sometimes changes that you make in the site interface cannot be browsed because of cash that your browser upload to save traffic instead of reload page every time you press `f5`. So, you need clean cash of your project site to see changes. For example, you can try [this solution](http://woocomp.ru/google-shrome-ochistka-kesha-otdelnogo-sajta-i-polnaya) (for Chrome). You need to do this every time you want fully reload your site.
+Keep in mind, that sometimes changes that you make in the site interface cannot be browsed because of cash that your browser upload to save traffic instead of reloading page every time you press `f5`. So, you need clean cash of your project site to see the changes. For example, you can try [this solution](http://woocomp.ru/google-shrome-ochistka-kesha-otdelnogo-sajta-i-polnaya) (for Chrome). You need to do this every time you want fully reload your site.
 
 1. change a title name of your project in `/corpus_spoco/index.php` and in `/corpus_spoco/jsapp/corpus.js` everywhere you see
 
