@@ -148,6 +148,6 @@ Keep in mind that you must shield specific characters inside the text with `\`. 
 
 ### Contacts (for all questions)
 
-Anastasia Panova <anastasia.b.panova@gmail.com>
+Anastasia Panova *anastasia.b.panova[at]gmail[dot]com*
 
-Lera Morozova <tito_alba@mail.ru>
+Lera Morozova *tito_alba[at]mail[dot]ru*
