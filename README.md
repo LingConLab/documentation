@@ -62,7 +62,7 @@ If you create a function or even package it is better to incorporate some argume
 If you create a function or even package it is nice to write some text that describes every argument in all functions and all classes. It is also important to add some working examples that illustrate what youe functions do.
 
 ### 2.8 Citing
-Don't forget to cite your data sources and software developers (Python, R, all package creaters). It is also nice to provide information about how to cite your work. If the result of our work is some `.html` page that represents data it is possible to use [GitHub](https://github.com) and [Zenodo](https://zenodo.org/) for obtaining some DOI codes for any stuff that you put in the GitHub repository.
+Don't forget to cite your data sources and software developers (Python, R, all package creaters). It is also nice to provide information about how to cite your work. If the result of our work is some `.html` page that represents data it is possible to use [GitHub](https://github.com) and [Zenodo](https://zenodo.org/) for obtaining some DOI codes for any stuff that you put in the GitHub repository. For experiments and databases it is also possible to use [OSF](osf.io).
 
 ### 2.9 Versioning
 Each important change to a function/package should be announced in `NEWS.md`. It is also to nice to have tracking of versions (have a look to [Semantic Versioning](https://semver.org/)).
