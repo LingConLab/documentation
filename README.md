@@ -71,7 +71,23 @@ Each important change to a function/package should be announced in `NEWS.md`. It
 
 ## 3. Github Repos
 
----
+*It would be better to use laconic names for your GitHub repositories, try to avoid using the full NPs, this information could find its place in the description of a project.
+
+good: rut-corpus 
+bad: corpus-of-the-rutul-language
+
+*Use semantically interpretable names
+
+good: rut-elicit-db 
+bad: my_article_2018
+
+*Use only hyphens as the delimiters for the name of your GitHub repository; you shouldn't also use the capitals.
+
+*Provide your repo with a short description that clarifies the full name and the aim (if needed) of a project. It would be nice if there was a relevant link, for example a link to a web-service which code is stored in your repo.
+
+*Try not to use Laboratory's GitHub for your personal or temporary projects.
+
+*Commits in your repository should always have a comment describing what has changed comparing to the previous commit
 
 ## 4. DBs
 
