@@ -89,7 +89,7 @@ bad: `my_article_2018`
 
 * Try not to use Laboratory's GitHub for your personal or temporary projects and vice versa
 
-* It is better to use messages provided with git commits describing what has changed comparing to the previous commit
+* It is better to use messages provided with git commits reasonably describing what has changed comparing to the previous commit
 
 ## 4. DBs
 
