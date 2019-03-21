@@ -50,7 +50,7 @@ If files should be run in a particular order, prefix them with numbers. If it se
 It is nice to limit your code to 80 characters per line. Long code lines are bad for readability. Also, many people prefer editor windows that are about 80 characters wide.
 
 ### 2.4 Comment your code
-
+Just do it.
 
 ### 2.5 Tests
 If you create a function or even package that will be used multiple times, it is nice to create tests for each function. It is even beter to write some tests before you start creating your function or package.
