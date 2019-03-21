@@ -2,7 +2,7 @@
 
 * K. Filatov, G. Moroz, L. Morozova, N. Panova, L. Sokur, M. Voronov
 * Linguistic Convergence Laboratory
-* 9 March 2019
+* 21 March 2019
 * last version could be found [here](https://github.com/LingConLab/documentation/blob/master/README.md).
 
 ---
