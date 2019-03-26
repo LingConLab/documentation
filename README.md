@@ -91,7 +91,31 @@ bad: `my_article_2018`
 
 * It is better to use messages provided with git commits reasonably describing what has changed comparing to the previous commit
 
-## 4. DBs
+## 4. Databases
+
+You should provide your database with a documentation regardless of the format. Please name tables and columns of your databases relatively to its content.
+
+- `.cvs`, `.xls` tables should have a small description of the whole content. Comment each column on the data it contains, e.g.:
+
+> **Cow Dataset**
+>
+> The current dataset contains information on cows of southern Dagestan area
+>
+> *id* - unique identificatior of each cow
+>
+> *age* - the age of a cow at the moment of documentation
+>
+> *colour* - the colour of fur of a cow
+
+- any kind of relational **SQL** databases should be provided with a description of the way its tables are connected with each other. Also, it would be nice if you mention the format of each column (int, chr, data etc.); each table and colums should have the same kind of comments as you can see above.
+
+It is strongly recommended you to use unique ids as a relational key for tables of your database to simplify its relational structure. 
+
+- **documentary databases** (JSON, XML and management systems like MongoDB or ElasticSearch) should also have comment on what kind of documents it may contain and what structure they have
+
+- any other type of DB should have similiar documentation based on further principle: every key and every value should be decribed.
+
+[Some miraculous example is comming soon...]()
 
 ---
 
@@ -140,12 +164,34 @@ You may follow an example given in [`Instruction to dialect corpora platform`](h
 
 ## 6. Python
 
-If you create scripts, applications or libraries using Python, you should provide comments in your code.
-The best way do is to use docstrings which can be easily accessed with `<name>.__doc__`
-You should describe every module, function, class and method (what is it for, how it works, why it is there).
-For modules you also shoud provide list of variables and their description.
-For classes you should provide list of variables, attributes and their description.
-For functions and methods you should provide list of parameters and the output.
+### 6.1 Format reqiurements
+If you create scripts, applications or libraries using Python, you should provide comments in your code according to PEP8 rules. 
+
+### 6.2 Modules
+In README to your python project you should list system requiremets you use: e.g. python version and list of modules.
+
+### 6.3 Comments
+Comment your code reasonably and as extensively as possible. It would be nice if you give a short description on each module and class you have created. Comment your classes and functions on input/output values if it is necessary. The best way to do this is to use docstrings which can be easily accessed with `<name>.__doc__`, e.g. comment for a function:
+
+```
+def build_mlp(input_placeholder, output_size, scope):
+    """
+        Builds a feedforward neural network
+        
+        arguments:
+            input_placeholder: placeholder variable for the state (batch_size, input_size)
+            output_size: size of the output layer
+            scope: variable scope of the network
+        returns:
+            output placeholder of the network (the result of a forward pass)   
+    """
+    with tf.variable_scope(scope):
+        # some code here
+    return output_placeholder
+```
+
+### 6.4 Compatibility issue
+Please name your variables in understandible way in English to make it readable for international co-workers. Make your code as much compatible to other systems as much as possible, e.g. use `os.path.join` for path variables to make them valid for any OS.
 
 We provide the example in `documented_python.py` in this repo.
 
