@@ -91,6 +91,8 @@ bad: `my_article_2018`
 
 * It is better to use messages provided with git commits reasonably describing what has changed comparing to the previous commit
 
+---
+
 ## 4. Databases
 
 You should provide your database with a documentation regardless of the format. Please name tables and columns of your databases relatively to its content.
