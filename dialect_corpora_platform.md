@@ -86,6 +86,8 @@ Insert tags that you have chosen for search into `metaTags` list in `add_meta.py
 
 `metaTags = ['id', 'string_id', 'sex', 'year_of_birth', 'education', 'russian_age']`
 
+Also set the same tags in `/corpus_spoco/settings/meta.json` file as in a template example.
+
 ---
 
 ## Corpus generation
