@@ -69,6 +69,13 @@ Don't forget to cite your data sources and software developers (Python, R, all p
 ### 2.9 Versioning
 Each important change to a function/package should be announced in `NEWS.md`. It is also to nice to have tracking of versions (have a look to [Semantic Versioning](https://semver.org/)).
 
+The short explanation of semantic versioning is as follows.
+
+Your version is the three numbers: X.Y.Z:
+* You added patches => increment Z
+* You added new backwards-compatible features => increment Y
+* You added new features that break backwards-compatibility => increment X
+
 ---
 
 ## 3. Github Repos
@@ -200,8 +207,35 @@ def build_mlp(input_placeholder, output_size, scope):
     return output_placeholder
 ```
 
-### 6.4 Compatibility issue
+### 6.4 Compatibility Issue
 Please name your variables in understandible way in English to make it readable for international co-workers. Make your code as much compatible to other systems as possible, e.g. use `os.path.join` for path variables to make them valid for any OS.
+
+### 6.5. Tests
+
+They should exist if you write an app or a library.
+
+### 6.6. Packaging
+
+There are several things that should be in your `setup.py`. People sometimes forget to include:
+
+1. `python_requires` parameter, e.g. `python_requires='>=3.5'`. In case you don't have it, people will create bug reports that it does not work under Python 2.5 and they will be right.
+
+2. `install_requires` parameter: the dependencies.
+
+Also, you should not hardcode version info into your `setup.py`. It's better to import it from your `__init.py__`:
+
+```
+from setuptools import setup
+from <your_package> import __version__
+
+setup(
+    ...
+    version=__vesrion__,
+    ...
+)
+```
+
+### 6.7. Example
 
 We provide the example in `documented_python.py` in this repo.
 
@@ -216,7 +250,7 @@ library(tidyverse)
 library(lingtypology)
 ```
 
-Superheroes could also use `packageVersion()` function and report verssions of the packages.
+Superheroes could also use `packageVersion()` function and report versions of the packages.
 
 ```
 library(tidyverse) # v. 1.2.1
