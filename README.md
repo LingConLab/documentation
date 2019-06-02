@@ -231,13 +231,15 @@ Be careful when using `setwd()`. Usage of the absolute path (like `"/Users/Allad
 ### 7.3 Temporary objects
 For long codes it is a good practice to remove temporary objects after they have served their purpose. It will make it easear to debug the code.
 
+---
+
 ## 8. Cautionary Tale
 
 In 2017 Boeing released a new airplane Boeing 737 MAX. Its position of engines made the nose of planes go upward. To compensate for this, they implemented a computer program called [MCAS](https://en.wikipedia.org/wiki/Maneuvering_Characteristics_Augmentation_System) that lowered the nose automatically.
 
-However, Boeing did not release the documentation for the program. Therefore, pilots didn't know that it even exists. It led to two major accidents (
-[here](https://en.wikipedia.org/wiki/Lion_Air_Flight_610) and
-[here](https://en.wikipedia.org/wiki/Ethiopian_Airlines_Flight_302)
-) and Boeing 737 MAX was banned in multiple countries (including all the EU, Russia, US etc.).
+However, Boeing did not release the documentation for the program. Therefore, pilots didn't know that it even exists. It led to two major accidents
+([here](https://en.wikipedia.org/wiki/Lion_Air_Flight_610) and
+[here](https://en.wikipedia.org/wiki/Ethiopian_Airlines_Flight_302))
+and Boeing 737 MAX was banned in multiple countries (including all the EU, Russia, US etc.).
 
 And that's why you should provide documentation.
