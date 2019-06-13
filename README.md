@@ -206,6 +206,9 @@ def build_mlp(input_placeholder, output_size, scope):
         # some code here
     return output_placeholder
 ```
+The example above uses Google style of docstrings. There are multiple other styles that may be used such as numpydoc (specs for numpydoc [here](https://numpydoc.readthedocs.io/en/latest/format.html)). The general idea is that you should not mix styles in one project.
+
+Further reading: https://www.datacamp.com/community/tutorials/docstrings-python.
 
 ### 6.4 Compatibility Issue
 Please name your variables in understandible way in English to make it readable for international co-workers. Make your code as much compatible to other systems as possible, e.g. use `os.path.join` for path variables to make them valid for any OS.
