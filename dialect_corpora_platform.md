@@ -122,7 +122,7 @@ Keep in mind, that sometimes changes that you make in the site interface cannot 
 
 1. change a title name of your project in `/corpus_spoco/index.php` and in `/corpus_spoco/jsapp/corpus.js` everywhere you see
 
-2. upload a picture for background to `/corpus_spoco/images` and change the picture name in `/corpus_spoco/styl.less`
+2. upload a picture for background to `/corpus_spoco/images` and change the picture name in `/corpus_spoco/styl.less` (in the new version of the platform - in `/corpus_spoco/jsapp/pages/main.html`)
 
 3. fill site sections with the project infornation in `/corpus_spoco/jsapp/info`
 
