@@ -92,13 +92,13 @@ Also set the same tags in `/corpus_spoco/settings/meta.json` file as in a templa
 
 ## Corpus generation
 
-1. set proper base_path to `/corpus_spoco` in `add_meta.py` according to hosting you use
+1. set proper base_path to `/corpus_spoco` in `add_meta.py` and `annotator.py` according to hosting you use
 
-2. sit proper paths to `/corpus_data` and `/corpus_spoco` in files `/corpus_data/REBUILDCORPUSnoSoundfilesRolling.sh` and `/corpus_spoco/settings/init.php`
+2. set proper paths to `/corpus_data` and `/corpus_spoco` in files `/corpus_data/REBUILDCORPUSnoSoundfilesRolling.sh` and `/corpus_spoco/settings/init.php`
 
-3. create symbolic links of `/corpus_data/FullTexts.html` and `/corpus_data/files_html` with the same names into `/corpus_spoco`
+3. create symbolic links of `/corpus_data/FullTexts.html` and `/corpus_data/files_html` with the same names into `/corpus_spoco` (in the new version of the platform they are created automatically in `sh REBUILDCORPUSnoSoundfilesRolling.sh`)
 
-4. if `/corpus_data` run `sh REBUILDCORPUSnoSoundfilesRolling.sh` via command line (you should make ssh connection for that and use a command line, check out **administration** section) and wait finishing of corpus generation
+4. in `/corpus_data` run `sh REBUILDCORPUSnoSoundfilesRolling.sh` via command line (you should make ssh connection for that and use a command line, check out **administration** section) and wait finishing of corpus generation
 
 After that, the following functions must be accessible on your project site:
 
