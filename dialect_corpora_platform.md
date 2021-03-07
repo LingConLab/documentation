@@ -88,6 +88,8 @@ Insert tags that you have chosen for search into `metaTags` list in `add_meta.py
 
 Also set the same tags in `/corpus_spoco/settings/meta.json` file as in a template example, in `/corpus_spoco/backend/get_results.php` and in `/corpus_data/REBUILDCORPUSnoSoundfilesRolling.sh` (lines starting with `cwb-encode`).
 
+If needed, change number and positions of green buttons with meta tags in `corpus_spoco/jsapp/languageQuery/languageQuery.html`.
+
 ---
 
 ## Corpus generation
